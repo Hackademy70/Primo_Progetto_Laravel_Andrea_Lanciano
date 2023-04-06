@@ -1,0 +1,252 @@
+/* VARIABILI GLOBALI */
+:root{
+    --prim: #A288E3;
+    --sec: #BBD5ED;
+    --terz: #CCFFCB;
+    --back: #cccccc;
+    --kindOfwhite: #ffffff;
+    --black: black;
+}
+/* classi universali */
+.text-font{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #BBD5ED;
+}
+
+
+
+/* CSS NAVBAR */
+.my-bg-navbar{
+    background-color: #A288E3;
+    color: var(--kindOfwhite) !important;
+}
+/* MEDIA-Large DEVICES */
+/* btn inside the nav */
+.my-btn-shop, .my-btn-shop:focus{
+    color: var(--kindOfwhite);
+    border: solid 1px var(--kindOfwhite);
+}
+.my-btn-shop:hover{
+    background-color: var(--kindOfwhite);
+    color: var(--black);
+}
+/* LOGO e MEDIAQUERY */
+@media screen and (min-width: 767px) and (max-width: 1100px) {
+    .container{
+        justify-content: center !important;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container{
+        justify-content: center !important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .my-list-class{
+        display: none;
+    }
+}
+.my-btn, .my-btn:hover{
+    color: var(--kindOfwhite);
+    border: 1px solid var(--kindOfwhite);
+}
+/* colori ITEM se si vuole fare animazione(QUELLI DELLA NAVBAR MEDIO_LARGE) */
+.nav-link, .nav-link:focus{
+    color: var(--kindOfwhite);
+}
+/* MOBILE DEVICES */
+.bg-navbar-side{
+    background-color: var(--prim);
+}
+.my-logo-text{
+    color: var(--sec);
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+.my-logo-text2{
+    color: var(--terz);
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+/* ff */
+
+
+
+
+/* CAROSELLO */
+.item{
+    height: 80vh;
+    min-height: 300px;
+}
+#svizzera{
+    background-image: url(/media/svizzera.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#zen{
+    background-image: url(/media/paesaggio-zen.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+#borgo{
+    background-image: url(/media/castello.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* Carousel caption modify */
+.carousel-caption h1{
+    font-size: 150%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    font-size: 18px;
+    line-height: 1.3;
+}
+.bg-caption{
+    background-color: rgba(20, 20, 20, 0.7);
+    border-radius: 20px;
+}
+.carousel-caption{
+    right: 20%;
+    left: 20%;
+    top: 30%;
+    bottom: 30%;
+}
+@media screen and (max-width: 650px) { /*media MOBILE DEVICES*/
+    .bg-caption{
+        background-color: transparent;
+    }
+    #svizzera{
+        background: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url(/media/svizzera.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    #zen{
+        background: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url(/media/paesaggio-zen.jpg);
+        background-size: cover;
+        background-position: center;
+    
+    }
+    #borgo{
+        background: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.4)), url(/media/castello.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    /* CARD del secondo carosello (mobile-devices) */
+    #prima-card{
+        background: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url(/media/Carousel-images/architettura-bella.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    #seconda-card{
+        background: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url(/media/Carousel-images/architettura-scura.jpg);
+        background-size: cover;
+        background-position: center;
+    
+    }
+    #terza-card{
+        background: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.4)), url(/media/Carousel-images/architettura-bella.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+/* fine carosello */
+
+
+
+
+/* Inizio Section CONOSCICI */
+.container-color{
+    background-color: var(--terz);
+}
+.img-conoscici{
+    width: 100%;
+    background-image: url(/media/castello-sole.jpg);
+}
+/* CARD */
+.card-dim-img{
+    width: 100%;
+}
+
+/* SEZIONE scritta con animazione */
+.box-class-mine{
+    height: 30vh;
+}
+#text-color-black{
+    color: var(--black) !important;
+}
+
+
+/* FORM */
+.bg-form{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(20, 20, 20, 0.4);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+.bg-form-modal{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(20, 20, 20, 0.4);
+    padding: 20px 40px;
+}
+.form-field:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+/* FOOTER */
+.my-nav-link{
+    list-style: none;
+}
+
+
+
+/* ANIMAZIONE GENERATA */
+.slide-in-left {
+	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-3-7 16:18:26
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-left
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
